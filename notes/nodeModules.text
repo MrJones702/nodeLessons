@@ -1,0 +1,21 @@
+Js was originally designed to use for browser scripts but now its used to write full flegeed apps, both within and outside the browser (outside is what node does). 
+
+Js did not start out w/ common libraries pr support for distributing code to multiple files then merging them into a single app.
+2009 CommonJS format created to fill that gap. C-JS defined a module format for JS apps.
+Node & NPM were developed using C-JS module format. 
+
+3 categories for node modules
+    1) External, 3rd party modules 
+        -installed using NPM to node_modules folder
+    2) Node core modules
+        -built into node, do not need to be installed
+        -intentionally minimal 
+        -include path, fs (filesystem), OS, util, and more 
+    3) File based modules within our own application 
+        -Use module.exports syntax to export code form JS files 
+        -import into other files using Nodes built in require functtion 
+        -very much like ES6 import/export concept, which is also available in Node from node version 8.5 and up.
+
+You can run a test in the console just by typing node then the file name.. 
+ w/ node we can make a function then export it in one file and call it in another function/ import it using the require keyword 
+ 
